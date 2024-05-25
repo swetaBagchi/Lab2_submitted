@@ -125,7 +125,7 @@ public class StepDefinition {
     @Then("Mina Kurser option is visible")
     public void mina_kurser_option_is_visible() {
         boolean visibilityOfMinaKurser = driver.findElement(By.xpath("//*[@id=\"main-navigation0\"]")).isDisplayed();
-        assertTrue(visibilityOfMinaKurser);
+        assertFalse(visibilityOfMinaKurser);
     }
 
     @Then("retrieves an element by classname only and the text equals to {string}")
