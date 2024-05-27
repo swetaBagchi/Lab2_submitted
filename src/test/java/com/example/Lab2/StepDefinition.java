@@ -28,6 +28,7 @@ public class StepDefinition {
     public void iths_se_is_available() {
         options = new ChromeOptions();
         options.addArguments("incognito");
+        options.addArguments("headless=new");
         driver = new ChromeDriver(options);
     }
     @When("the user visits iths.se")
