@@ -21,7 +21,7 @@ Feature: Test ITHS.se for LAB2
     When the user accepts the cookies
     And removes the pop-up
     And visits all courses
-    Then number of courses available are 28
+    Then number of courses available are 30
 
   Scenario: Maximize window size and check menu button visibility
     When user maximizes the window
