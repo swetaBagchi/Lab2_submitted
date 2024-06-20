@@ -7,6 +7,10 @@ Feature: Test ITHS.se for LAB2
   Scenario: ITHS should show correct title
     Then the title should be "IT-Högskolan – Här startar din IT-karriär!"
 
+  Scenario: Accept cookies and home page is visible
+    When the user accepts the cookies
+    Then h1 header should be visible
+
   Scenario: Open the window in fullsceen
     When the user accepts the cookies
     And the window opens in fullscreen
