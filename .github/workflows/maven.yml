@@ -20,11 +20,7 @@ jobs:
         with:
           java-version: 21
           distribution: adopt
-      - name: Generating cucumber report
-        uses: deblockt/cucumber-report-annotations-action@v1.7
-        with:
-          access-token: ${{ secrets.GITHUB_TOKEN }}
-          path: "**/cucumber-report.json"
+
 
       - name: Install ChromeDriver
         run: |
